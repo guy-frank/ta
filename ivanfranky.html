@@ -1,0 +1,29 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>Marks Check </h1>
+    <p>put your marks here</p>
+    <input type="number" id="wo" placeholder="put marks">
+    <button onclick="checkmarks()">Check</button>
+    <p id="no"></p>
+    <script>
+        function checkmarks() {
+            let marks = document.getElementById('wo').value;
+            let result = document.getElementById('no');
+            if ( marks>=70) {
+                result.textContent="competent"
+                result.style.color="green"
+            }
+            else {
+                result.textContent="not yet competent"
+                result.style.color="red"
+            }
+        }
+    </script>
+ </body>
+ </html>

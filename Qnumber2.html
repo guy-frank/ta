@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Marks</title>
+    <script>
+        function checkMarks() {
+            let marks = document.getElementById("marks").value;
+            let result = document.getElementById("result");
+            if (marks > 70) {
+                result.textContent = "congratulations !! you are Competent"; 
+                result.style.color = "green"; 
+            } else {
+                result.textContent = "not yet competent , you should work harder"; 
+                result.style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Check Your Marks</h1>
+    <p>Put Your marker there and click **Check**:</p>
+    <input type="number" id="marks" placeholder="put your marks">
+    <button onclick="checkMarks()">Check</button>
+    <p id="result" style="font-weight: bold;"></p><br><br>
+</body>
+</html>

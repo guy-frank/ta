@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Greeting</title>
+    <script>
+        function checkTime() {
+            let timeInput = document.getElementById("time").value
+            let result = document.getElementById("result");
+            let [hour, minute] = timeInput.split(":").map(Number);
+            if (hour === 7 && minute === 30) {
+                result.textContent = "Good Morning";
+                result.style.color = "green"; 
+            } else {
+                result.textContent = "its not 7:30 ";
+                result.style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Time Greeting</h1>
+    <p>Enter the time (in 24-hour format) below and click "Check Time":</p>
+    <input type="time" id="time">
+    <button onclick="checkTime()">Check Time</button>
+    <p id="result" style="font-weight: bold;"></p>
+    <a href="Q2.html">Q2</a><br><br>
+    <a href="Q3.html">Q3</a><br><br>
+    <a href="Q4.html">Q4</a><br><br>
+    <a href="Q5.html">Q5</a><br><br>
+    
+    
+
+</body>
+</html>

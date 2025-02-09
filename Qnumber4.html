@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Evaluation</title>
+    <script>
+        function evaluateMarks() {
+            let marks = document.getElementById("marks").value;
+            let result = document.getElementById("result")
+            if (marks >= 70) {
+                result.textContent = "Competent";
+                result.style.color = "green"; 
+            } else {
+                result.textContent = "NYC (Not Yet Competent)";
+                result.style.color = "red"; 
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Student Marks Evaluation</h1>
+    <p>Enter the student's marks below and click "Evaluate":</p>
+    <input type="number" id="marks" placeholder="Enter marks">
+    <button onclick="evaluateMarks()">Check</button>
+    <p id="result" style="font-weight: bold;"></p>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Checker</title>
+    <script>
+        function checkAge() {
+            let age = document.getElementById("age").value;
+            let result = document.getElementById("result");
+            if (age > 17) {
+                result.textContent = "You are an adult";
+                result.style.color = "green"; 
+            } else {
+                result.textContent = "You are not an adult yet";
+                result.style.color = "red";
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Age Checker for Reine</h1>
+    <p>Enter Reine's age below and click the "Check" button:</p>
+    <input type="number" id="age" placeholder="Enter age">
+    <button onclick="checkAge()">Check</button>
+    <p id="result" style="font-weight: bold;"></p>
+</body>
+</html>

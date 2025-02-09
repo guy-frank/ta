@@ -1,0 +1,26 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <p>check your marks:</p>
+        <input type="number" id="ki">
+         <button onclick="checkmarks()">check</button>
+         <p id="hi"></p>
+         <script>
+            function checkmarks() {
+                let marks = document.getElementById('ki').value;
+                let result = document.getElementById('hi');
+                if (marks >=70){
+                    result.textContent = "COMPETENT";
+                }
+                else {
+                      result.textContent = "NYC";
+                }
+            }
+         </script>
+    </body>
+    </html>

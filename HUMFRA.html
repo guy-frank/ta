@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head><title>turashoboy</title></head>
+<body>
+    <p>Enter the FirstNumber:<input type="number1" id="n1"></p>
+    <p>Enter the SecondNumbe:<input type="number2" id="n2"></p>
+    <button onclick="add()">add</button>
+    <button onclick="sub()">sub</button>
+    <p>answer:<input id="ans"></p>
+    <script>
+        function add(){
+         var number1 = parseInt(document.getElementById('n1').value);
+        var number2 = parseInt(document.getElementById('n2').value);
+    var add= number1+number2;
+document.getElementById('ans').value=add;        }
+    
+        function sub(){
+         var number1 = parseInt(document.getElementById('n1').value);
+        var number2 = parseInt(document.getElementById('n2').value);
+    var sub= number1-number2;
+document.getElementById('ans').value=sub;        }
+    </script>
+    
+</body>
+</html>
